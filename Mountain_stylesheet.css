@@ -1,0 +1,683 @@
+/*<style rel="stylesheet">*/
+
+body {
+	font-family: 'Roboto Slab', serif;
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style-type: none; /* Убираем маркеры */
+	border-bottom: 1px solid white;
+   }
+   ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   }
+header {
+	margin: 0;
+	padding: 0;
+	background-size: cover;
+	min-height: 850px;
+	background-image: url(https://unsplash.it/2560/1707?image=961);
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.header_content,
+.midl_of_page {
+	/*задаем одинаковую шириу смыслового контента всей страницы*/
+	margin: auto;
+	max-width: 800px;
+}
+
+.top_of_header {
+	display: flex;
+	padding-top: 25px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.your_logo_img {
+	width: 165px;
+}
+
+.menu {
+	/*font-size: 24px;*/
+}
+
+.h1 {
+	padding-top: 40px;
+	color: white;
+	font-size: 32px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.second_line {
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.Text_header {
+	color: white;
+	text-align: center;
+	font-weight: lighter;
+	line-height: 25px;
+}
+
+.buttons {
+	padding-top: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.button {
+	margin: 2px;
+	padding: 10px;
+}
+
+.Learne_more {
+	background: LightSeaGreen;
+}
+
+.Download {
+	background: red;
+}
+
+.second_block {
+	padding-top: 50px;
+	display: flex;
+}
+
+.second_block p,
+h2,
+h1 {
+	text-align: center;
+	color: DimGray;
+}
+
+.second_block h2,
+h1 {
+	margin: 0;
+}
+
+.second_block h1 {
+	font-size: 35px;
+	padding-bottom: 5px;
+}
+
+.article {
+	font-size: 12px;
+	padding: 10px;
+	line-height: 1.5em;
+}
+
+.third_block {
+	margin-top: 30px;
+	background-position: 50% 50%;
+	background-size: cover;
+	min-height: 450px;
+	background-image: url(https://unsplash.it/3000/2000?image=685);
+}
+
+.third_block_conteiner {
+	display: flex;
+	height: 450px;
+	justify-content: flex-end;
+	color: white;
+}
+
+.third_block_content {
+	width: 50%;
+	background-color: rgba(0, 200, 255, 0.5);
+	height: inherit;
+	color: white;
+}
+
+.third_block_content_text {
+	margin: 40px;
+	margin-top: 30px;
+}
+
+.third_block_content_text p,
+h3,
+h4 {
+	color: white;
+	text-align: left;
+}
+
+.third_block_content_text p {
+	font-size: 11px;
+	line-height: 2em;
+}
+
+.squares {
+	margin-left: 30px;
+	margin-right: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.squere {
+	width: 140px;
+	height: 140px;
+	border: 1px solid white;
+	text-align: center;
+	align-items: center;
+}
+
+.nuber {
+	font-size: 22px;
+}
+
+.forth_block {
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.forth_block_text {
+	padding-left: 20px;
+	width: 500px;
+}
+
+.forth_block_img {
+	margin: 20px;
+	width: 300px;
+	height: 300px;
+	background-position: 50% 50%;
+	background-size: cover;
+	background-image: url(https://picsum.photos/id/839/5472/3648);
+}
+
+.forth_block_text p {
+	font-size: 13px;
+	line-height: 25px;
+}
+
+.forth_block_text h1 {
+	text-align: left;
+}
+
+.Take_a_Look {
+	width: 100px;
+	background: red;
+}
+
+.fifth_block {
+	margin-top: 30px;
+	background-position: 50% 50%;
+	background-size: cover;
+	min-height: 450px;
+	background-image: url(https://unsplash.it/3000/2000?image=531);
+}
+
+.fifth_block_conteiner {
+	display: flex;
+	height: 450px;
+	justify-content: flex-start;
+	color: white;
+}
+
+.fifth_block_content {
+	width: 50%;
+	background-color: rgba(0, 200, 250, 0.5);
+	height: inherit;
+	color: white;
+}
+
+.fifth_block_content_text {
+	margin: 40px;
+	margin-top: 40px;
+}
+
+.fifth_block_content_text p {
+	color: white;
+	text-align: left;
+}
+
+.fifth_block_content_text_p1 {
+	font-size: 16px;
+	font-style: italic;
+}
+
+.fifth_block_content_text_p2 {
+	font-style: italic;
+	font-size: 11px;
+	line-height: 2em;
+}
+
+.fifth_block_content_text_p3 {
+	font-size: 16px;
+	font-weight: lighter;
+}
+
+.fifth_block_content_text_p4 {
+	font-size: 11px;
+	line-height: 2em;
+}
+
+.sixth_block {
+	background-color: Gainsboro;
+}
+
+.galery {
+	/*управляем расположением картинок галереи с помощью JS-библиотеки masonry*/
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+img {
+	width: 100%;
+}
+
+.grid-item {
+	margin-bottom: 10px;
+}
+
+.width-1 {
+	width: 31.5%;
+}
+
+.width-2 {
+	width: 64.5%;
+}
+
+.seventh_block {
+	padding-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.partner {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	height: 70px;
+	width: 16%;
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.partner_1 {
+	background-image: url(http://n91632yo.beget.tech/wp-content/uploads/2019/06/logo-sample-01-1.jpg);
+}
+
+.partner_2 {
+	background-image: url(http://n91632yo.beget.tech/wp-content/uploads/2019/06/logo-sample-02-1.jpg);
+}
+
+.partner_3 {
+	background-image: url(http://n91632yo.beget.tech/wp-content/uploads/2019/06/logo-sample-03-1.png);
+}
+
+.partner_4 {
+	background-image: url(http://n91632yo.beget.tech/wp-content/uploads/2019/06/logo-sample-04-1.jpg);
+}
+
+.partner_5 {
+	background-image: url(http://n91632yo.beget.tech/wp-content/uploads/2019/06/logo-sample-05-1.jpg);
+}
+
+.partner_6 {
+	background-image: url(http://n91632yo.beget.tech/wp-content/uploads/2019/06/logo-sample-06-1.jpg);
+}
+
+.eighth_block {
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+
+.absolute_position {
+	/*создаем несколько равнозначных блоков для блюра и затемнения фона с Z-индексами*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.eighth_block_cover {
+	/*блок сфоновым изображением и блюром*/
+	background-image: url(https://unsplash.it/4000/3000?image=528);
+	background-position: 50% 50%;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	z-index: 99;
+	filter: blur(5px);
+}
+
+.eighth_block_cover_2 {
+	/*блок с затемнением фона поверх предыдущего*/
+	background-color: rgba(0, 0, 0, .7);
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+}
+
+.eighth_block_container {
+	/**/
+	z-index: 101;
+}
+
+.eighth_block_container_content {
+	line-height: 1.5em;
+	padding-top: 40px;
+	font-size: 13px;
+	max-width: 66%;
+	color: white;
+}
+
+.eighth_block_container_content h1 {
+	padding-bottom: 20px;
+	text-align: left;
+	font-size: 30px;
+	color: white;
+	line-height: 1em;
+}
+
+.Submit_Newsletter {
+	margin-top: 20px;
+
+	padding: 2px;
+	width: 120px;
+	background-color: red;
+}
+
+footer {
+	height: 150px;
+	background-color: DarkSlateGrey;
+}
+
+.footer_content h1 {
+	padding-top: 30px;
+	text-align: left;
+	color: white;
+}
+
+.footer_content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+}
+
+.footer_content_left a {
+	color: LightSeaGreen;
+	text-decoration: none;
+}
+
+.footer_icons i {
+	color: white;
+	text-decoration-style: none;
+}
+
+.aside_menu {
+	/*боковое меню навигации*/
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 200px;
+	height: 100%;
+	background-color: gray;
+}
+
+.nav_button {
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	height: 50px;
+	border-top: solid white 1px;
+	border-bottom: solid black 1px;
+}
+
+
+
+
+@media (max-width: 750px) {
+
+	/*правки для мобильной версии*/
+	.your_logo_img {
+		width: 350px;
+	}
+
+	.menu {
+		font-size: 42px;
+	}
+
+	.header_content {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+
+	.h1 {
+		font-size: 36px;
+	}
+
+	.second_line {
+		font-size: 60px;
+	}
+
+	.Text_header {
+		margin: auto;
+		width: 350px;
+		font-size: 20px;
+		line-height: 2em;
+	}
+
+	.button {
+		font-size: 20px;
+	}
+
+	.second_block {
+		margin-left: 20px;
+		margin-right: 20px;
+		flex-direction: column;
+		
+	}
+
+	.article {
+		font-size: 20px;
+	}
+
+	.third_block {
+		height: 800px;
+	}
+
+	.third_block_conteiner {
+		display: flex;
+		width: 450px;
+		margin: auto;
+		height: 800px;
+	}
+
+	.third_block_content {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.third_block_content_text {
+		margin: 20px;
+		margin-top: 20px;
+	}
+
+	.third_block_content_text h3 {
+		font-size: 36px;
+	}
+
+	.third_block_content_text h4 {
+		font-size: 22px;
+	}
+
+	.third_block_content_text p {
+		font-size: 17px;
+		line-height: 1.7em;
+	}
+
+	.squares {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.squere {
+		margin: 15px;
+		width: 200px;
+		height: 160px;
+		border: 1px solid white;
+		text-align: center;
+		align-items: center;
+		font-size: 20px;
+	}
+
+	.nuber {
+		font-size: 32px;
+	}
+
+	.forth_block {
+		flex-direction: column;
+		margin: auto;
+		justify-content: space-between;
+	}
+
+	.forth_block_text {
+		width: auto;
+	}
+
+	.forth_block_img {
+		height: 450px;
+		width: 450px;
+	}
+
+	.forth_block_text p {
+		font-size: 18px;
+		line-height: 1.7em;
+	}
+
+	.forth_block_text h1 {
+		font-size: 40px;
+	}
+
+	.Take_a_Look {
+		width: 110px;
+	}
+
+	.fifth_block {
+		height: 600px;
+	}
+
+	.fifth_block_conteiner {
+		display: flex;
+		height: inherit;
+		justify-content: center;
+	}
+
+	.fifth_block_content {
+		width: 450px;
+	}
+
+	.fifth_block_content_text {
+		padding-top: 40px;
+		margin: 15px;
+	}
+
+	.fifth_block_content_text p {
+		color: white;
+		text-align: left;
+	}
+
+	.fifth_block_content_text_p1 {
+		font-size: 20px;
+	}
+
+	.fifth_block_content_text_p2 {
+		line-height: 1.7em;
+		font-size: 18px;
+	}
+
+	.fifth_block_content_text_p3 {
+		font-size: 20px;
+		font-weight: lighter;
+	}
+
+	.fifth_block_content_text_p4 {
+		font-size: 16px;
+		line-height: 2em;
+	}
+
+	.width-1 {
+		width: 49%;
+	}
+
+	.width-2 {
+		width: 49%;
+	}
+
+	.seventh_block {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.partner {
+		margin-top: 30px;
+		margin-bottom: 30px;
+		height: 140px;
+		width: 50%;
+	}
+
+	.eighth_block {
+		height: 600px;
+	}
+
+	.eighth_block_container_content {
+		font-size: 17px;
+		max-width: 90%;
+		line-height: 2em;
+	}
+
+	.eighth_block_container_content h1 {
+		font-size: 40px;
+	}
+
+	.Submit_Newsletter {
+		width: 170px;
+	}
+
+	input {
+		height: 2em;
+		width: 100%;
+	}
+
+	footer {
+		height: 300px;
+	}
+
+	.footer_content h1 {
+		padding-top: 40px;
+		padding-bottom: 30px;
+		text-align: left;
+		color: white;
+	}
+
+	.footer_content {
+		margin-left: 20px;
+		margin-right: 20px;
+		flex-direction: column;
+		justify-content: flex-end;
+	}
+
+	.footer_icons {
+		height: 150px;
+		align-self: flex-end;
+	}
+
+}
